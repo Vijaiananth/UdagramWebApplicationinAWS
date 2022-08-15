@@ -1,8 +1,7 @@
 ### Udagram Web Application - Deploy a high-availability web app using CloudFormation
-This folder provides the starter code for the "ND9991 - C2- Infrastructure as Code - Deploy a high-availability web app using CloudFormation" project. This folder contains the following files:
+In this project, I have built high availability web app using Cloud Formation. We have a set of files which builds the base network in AWS and then a set of files which builds the servers and load balancers.
 
-
-In YAML code, the `${EnvironmentName}` would be substituted with `Udagram` accordingly.
+**Udagram Web Application Architecture**
 
 ![Udagram Architecture](./UdagramAWSArchitecture.jpeg)
 
@@ -22,3 +21,5 @@ Below script creates stack which deploys network in AWS.
 Below script creates stack which deploys servers in AWS.
 
 ./create.sh Udagram-servers Udagram-servers.yml Udagram-server-parameters.json
+
+After creating both the stacks using above links, we can navigate to the output section in Udagram-servers stack and click on the load balancer link to view the application in browser.
